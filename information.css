@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #fde3c3;
+  color: #000000;
+}
+
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+
+
+.navbar {
+  background-color: #fde3c3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-right: 30px;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar .actions button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.login {
+  background-color: #D2C3B3;
+  color: #653600;
+}
+
+.order {
+  background-color: #653600;
+  color: white;
+}
+
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+/* background Section */
+.background {
+  position: relative;
+  height: 100vh;        /* penuh layar */
+  overflow: hidden;     /* biar rapi */
+}
+
+/* Gambar background */
+.background-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* biar gambar penuh tanpa gepeng */
+  display: block;
+  filter: brightness(70%); /* bikin agak gelap supaya teks jelas */
+}
+
+/* Teks Hero */
+.background-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.background-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: white;
+}
+
+.background-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8); /* bayangan teks */
+}
