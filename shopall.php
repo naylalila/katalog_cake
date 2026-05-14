@@ -1,0 +1,228 @@
+ <?php
+$page_css = "shopall.css";
+include 'komponen/header.php';
+?>
+
+ <section class="scroll">
+    <div class="scroll-images">
+      <img src="../image/Rectangle 21.png" alt="cake1">
+      <img src="../image/Rectangle 22.png" alt="cake2">
+      <img src="../image/Rectangle 23.png" alt="cake3">
+      <img src="../image/Rectangle 24.png" alt="cake4">
+      <!-- ulangi -->
+      <img src="../image/Rectangle 21.png" alt="cake1">
+      <img src="../image/Rectangle 22.png" alt="cake2">
+      <img src="../image/Rectangle 23.png" alt="cake3">
+      <img src="../image/Rectangle 24.png" alt="cake4">
+      <!-- ulangi -->
+      <img src="../image/Rectangle 21.png" alt="cake1">
+      <img src="../image/Rectangle 22.png" alt="cake2">
+      <img src="../image/Rectangle 23.png" alt="cake3">
+      <img src="../image/Rectangle 24.png" alt="cake4">
+      <!-- ulangi -->
+      <img src="../image/Rectangle 21.png" alt="cake1">
+      <img src="../image/Rectangle 22.png" alt="cake2">
+      <img src="../image/Rectangle 23.png" alt="cake3">
+      <img src="../image/Rectangle 24.png" alt="cake4">
+    </div>
+    <div class="scroll-text">DELI BAKERY CAKE</div>
+  </section>
+
+  <!-- MENU SECTION -->
+  <section class="menu">
+    <div class="menu-icon">🍰</div>
+    <h2>Our Reguler Menu</h2>
+    <p>
+      Evan though this is our regular menu, we use premium ingredients 
+      and affordable prices.
+    </p>
+  </section>
+
+ <!-- wrapper coklat -->
+  <div class="menu-wrapper">
+    <section class="menu-section">
+      <div class="menu-grid">
+        <!-- Item 1 -->
+        <div class="menu-item">
+          <img src="../image/Rectangle 8.png" alt="Croissant sugar plum">
+          <div class="menu-info">
+            <h3>Croissant sugar plum</h3>
+            <p>Made with premium ingredients and carefully processed, each bite is delicious and feels like heaven.</p>
+            <a href="#" class="price-btn"><span>🛒</span>IDR 17.000</a>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="menu-item">
+          <img src="../image/Rectangle 21.png" alt="Double Sweet donut">
+          <div class="menu-info">
+            <h3>Double Sweet donut</h3>
+            <p>Made with premium ingredients and carefully processed, each bite is delicious and feels like heaven.</p>
+            <a href="#" class="price-btn"><span>🛒</span>IDR 25.000</a>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="menu-item">
+          <img src="../image/Rectangle 29.png" alt="Brownies Bites">
+          <div class="menu-info">
+            <h3>Brownies Bites</h3>
+            <p>Made with premium ingredients and carefully processed, each bite is delicious and feels like heaven.</p>
+            <a href="#" class="price-btn"><span>🛒</span>IDR 20.000</a>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="menu-item">
+          <img src="../image/Rectangle 19.png" alt="Elmo Chocokiss">
+          <div class="menu-info">
+            <h3>Elmo Chocokiss</h3>
+            <p>Made with premium ingredients and carefully processed, each bite is delicious and feels like heaven.</p>
+            <a href="#" class="price-btn"><span>🛒</span>IDR 23.000</a>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="menu-item2">
+          <img src="../image/Rectangle 35.png" alt="Cromboloni choco layer">
+          <div class="menu-info">
+            <h3>Cromboloni choco layer</h3>
+            <p>Made with premium ingredients and carefully processed, each bite is delicious and feels like heaven.</p>
+            <a href="#" class="price-btn"><span>🛒</span>IDR 25.000</a>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="menu-item2">
+          <img src="../image/Rectangle 34.png" alt="Dessert Box Ifood">
+          <div class="menu-info">
+            <h3>Dessert Box Ifood</h3>
+            <p>Made with premium ingredients and carefully processed, each bite is delicious and feels like heaven.</p>
+            <a href="#" class="price-btn"><span>🛒</span>IDR 15.000</a>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="menu-item2">
+          <img src="../image/Rectangle 18.png" alt="BerryPast">
+          <div class="menu-info">
+            <h3>BerryPast</h3>
+            <p>Made with premium ingredients and carefully processed, each bite is delicious and feels like heaven.</p>
+            <a href="#" class="price-btn"><span>🛒</span>IDR 20.000</a>
+          </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="menu-item2">
+          <img src="../image/Rectangle 17.png" alt="Tiramissyou">
+          <div class="menu-info">
+            <h3>Tiramissyou</h3>
+            <p>Made with premium ingredients and carefully processed, each bite is delicious and feels like heaven.</p>
+            <a href="#" class="price-btn"><span>🛒</span>IDR 18.000</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+    <!-- MENU SECTION -->
+  <section class="menu">
+    <div class="menu-icon">🍰</div>
+    <h2>Our  event cake Menu </h2>
+    <p>
+     Our special menu is seasonal cakes. We only make these cakes during certain seasons, such as during orange and lemon season, we make several special cakes.
+    </p>
+  </section>
+
+ <!-- wrapper maroon -->
+  <div class="menu-wrapper2">
+    <section class="menu-section2">
+      <div class="menu-grid2">
+        <!-- Item 1 -->
+        <div class="menu-item1b">
+          <img src="../image/Rectangle 8.png" alt="oriangest cake">
+          <div class="menu-info">
+            <h3>oriangest Cake</h3>
+            <p>Made with premium ingredients and carefully processed, each bite is delicious and feels like heaven.</p>
+            <a href="#" class="price-btn2"><span>🛒</span>IDR 17.000</a>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="menu-item1b">
+          <img src="../image/Rectangle 21.png" alt="Double Sweet donut">
+          <div class="menu-info2">
+            <h3>Double Sweet donut</h3>
+            <p>Made with premium ingredients and carefully processed, each bite is delicious and feels like heaven.</p>
+            <a href="#" class="price-btn2"><span>🛒</span>IDR 25.000</a>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="menu-item1b">
+          <img src="../image/Rectangle 29.png" alt="Brownies Bites">
+          <div class="menu-info2">
+            <h3>Brownies Bites</h3>
+            <p>Made with premium ingredients and carefully processed, each bite is delicious and feels like heaven.</p>
+            <a href="#" class="price-btn2"><span>🛒</span>IDR 20.000</a>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="menu-item1b">
+          <img src="../image/Rectangle 19.png" alt="Elmo Chocokiss">
+          <div class="menu-info2">
+            <h3>Elmo Chocokiss</h3>
+            <p>Made with premium ingredients and carefully processed, each bite is delicious and feels like heaven.</p>
+            <a href="#" class="price-btn2"><span>🛒</span>IDR 23.000</a>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="menu-item2b">
+          <img src="../image/Rectangle 35.png" alt="Cromboloni choco layer">
+          <div class="menu-info2">
+            <h3>Cromboloni choco layer</h3>
+            <p>Made with premium ingredients and carefully processed, each bite is delicious and feels like heaven.</p>
+            <a href="#" class="price-btn2"><span>🛒</span>IDR 25.000</a>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="menu-item2b">
+          <img src="../image/Rectangle 34.png" alt="Dessert Box Ifood">
+          <div class="menu-info2">
+            <h3>Dessert Box Ifood</h3>
+            <p>Made with premium ingredients and carefully processed, each bite is delicious and feels like heaven.</p>
+            <a href="#" class="price-btn2"><span>🛒</span>IDR 15.000</a>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="menu-item2b">
+          <img src="../image/Rectangle 18.png" alt="BerryPast">
+          <div class="menu-info2">
+            <h3>BerryPast</h3>
+            <p>Made with premium ingredients and carefully processed, each bite is delicious and feels like heaven.</p>
+            <a href="#" class="price-btn2"><span>🛒</span>IDR 20.000</a>
+          </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="menu-item2b">
+          <img src="../image/Rectangle 17.png" alt="Tiramissyou">
+          <div class="menu-info2">
+            <h3>Tiramissyou</h3>
+            <p>Made with premium ingredients and carefully processed, each bite is delicious and feels like heaven.</p>
+            <a href="#" class="price-btn2"><span>🛒</span>IDR 18.000</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+<section class="menu">
+    <div class="menu-icon"></div>
+  </section>
+
+  <?php include 'komponen/footer.php'; ?>
