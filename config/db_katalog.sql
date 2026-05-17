@@ -19,22 +19,6 @@
 CREATE DATABASE IF NOT EXISTS `bakery` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `bakery`;
 
--- Dumping structure for table bakery.tb.produk
-CREATE TABLE IF NOT EXISTS `tb.produk` (
-  `id_produk` int NOT NULL AUTO_INCREMENT COMMENT 'id unik produk',
-  `nama_produk` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT 'nama produk',
-  `id_kategori` int DEFAULT NULL COMMENT 'kategori produk (kue kering, basah)',
-  `harga` decimal(10,2) DEFAULT NULL COMMENT 'harga produk',
-  `stock` int DEFAULT NULL COMMENT 'stock barang',
-  `deskripsi` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci COMMENT 'penjelasan produk',
-  `gambar produk` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT 'gambar produk',
-  PRIMARY KEY (`id_produk`),
-  KEY `FK_kategori` (`id_kategori`),
-  CONSTRAINT `FK_kategori` FOREIGN KEY (`id_kategori`) REFERENCES `tb_kategori` (`id_kategori`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
--- Dumping data for table bakery.tb.produk: ~0 rows (approximately)
-
 -- Dumping structure for table bakery.tb_kategori
 CREATE TABLE IF NOT EXISTS `tb_kategori` (
   `id_kategori` int NOT NULL AUTO_INCREMENT,
@@ -42,7 +26,48 @@ CREATE TABLE IF NOT EXISTS `tb_kategori` (
   PRIMARY KEY (`id_kategori`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table bakery.tb_kategori: ~0 rows (approximately)
+-- Dumping data for table bakery.tb_kategori
+INSERT INTO `tb_kategori` (`id_kategori`, `nama_kategori`) VALUES
+(1, 'Kue Kering'),
+(2, 'Kue Basah'),
+(3, 'Roti');
+
+-- Dumping structure for table bakery.tb_produk
+CREATE TABLE IF NOT EXISTS `tb_produk` (
+  `id_produk` int NOT NULL AUTO_INCREMENT COMMENT 'id unik produk',
+  `nama_produk` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT 'nama produk',
+  `id_kategori` int DEFAULT NULL COMMENT 'kategori produk (kue kering, basah)',
+  `harga` decimal(10,2) DEFAULT NULL COMMENT 'harga produk',
+  `stock` int DEFAULT NULL COMMENT 'stock barang',
+  `deskripsi` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci COMMENT 'penjelasan produk',
+  `gambar_produk` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL COMMENT 'gambar produk',
+  PRIMARY KEY (`id_produk`),
+  KEY `FK_kategori` (`id_kategori`),
+  CONSTRAINT `FK_kategori` FOREIGN KEY (`id_kategori`) REFERENCES `tb_kategori` (`id_kategori`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Dumping data for table bakery.tb_produk
+INSERT INTO `tb_produk` (`id_produk`, `nama_produk`, `id_kategori`, `harga`, `stock`, `deskripsi`, `gambar_produk`) VALUES
+(1, 'Croissant sugar plum', 1, 15000.00, 50, 'Croissant renyah dengan gula halus', 'Rectangle 8.png'),
+(2, 'Waffle berry runch', 1, 20000.00, 45, 'Waffle lezat dengan topping berry', 'Rectangle 9.png'),
+(3, 'Burntcheese wolp berry', 2, 25000.00, 30, 'Kue dengan keju hangus dan berry', 'Rectangle 13.png'),
+(4, 'Tiramissyou', 2, 22000.00, 25, 'Tiramisu klasik yang lezat', 'Rectangle 17.png'),
+(5, 'BerryPast', 1, 18000.00, 40, 'Pastry dengan fresh berry', 'Rectangle 18.png'),
+(6, 'Elmo Chocokiss', 2, 19000.00, 35, 'Kue coklat dengan cinta', 'Rectangle 19.png');
+
+-- Dumping structure for table bakery.tb_users
+CREATE TABLE IF NOT EXISTS `tb_users` (
+  `id_user` int NOT NULL AUTO_INCREMENT,
+  `nama` varchar(100) DEFAULT NULL,
+  `email` varchar(100) NOT NULL UNIQUE,
+  `password` varchar(255) NOT NULL,
+  `nomer_hp` varchar(15) DEFAULT NULL,
+  `alamat` text,
+  `created_at` timestamp DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id_user`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Dumping data for table bakery.tb_users: ~0 rows (approximately)
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
